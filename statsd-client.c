@@ -79,13 +79,8 @@ void statsd_finalize(statsd_link *link)
         link->ns = NULL;
     }
 
-    // free sockaddr_in
-    free(&link->server);
-
     // free whole link
     free(link);
-
-
 }
 
 /* will change the original string */
